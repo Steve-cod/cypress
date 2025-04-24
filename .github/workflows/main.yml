@@ -39,4 +39,4 @@ ui-chrome-tests:
     paths:
       - cypress/videos/**/*.mp4
       - cypress/screenshots/**/*.png
-    expire_in: 1 day
+    expire_in: 5 day
