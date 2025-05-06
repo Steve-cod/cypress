@@ -15,6 +15,15 @@ cache:
     - node_modules
     - test
 
+on:
+  workflow_dispatch:
+    inputs:
+      # Puedes definir inputs para pasar información al flujo de trabajo
+      my_input:
+        description: "Descripción del input"
+        required: false
+        default: "Valor predeterminado"
+
 ## Install npm dependencies and Cypress
 install:
   image: cypress/browsers:22.12.0
